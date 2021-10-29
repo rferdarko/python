@@ -1,1 +1,1 @@
-# Ta collection of python programs
+# A collection of python programs
