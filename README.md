@@ -1,2 +1,1 @@
-# python
-# This repo contains a collection of Python programs
+# Ta collection of python programs
