@@ -74,4 +74,71 @@ print(full_name)
 
 
 
+# Escape Sequences
+# The \ creates an escape sequence to tell python, everything after the \ is a string
+# This allows you to use a ' or " or \ in the statement
+print('It\'s kinda sunny')
+print("It\'s \"kinda\" sunny")
 
+# tab = \t
+# This allows you to place a tab between elements in the statement
+print('It\'s \t \"Kinda\" \t sunny')
+
+# New Line = \n
+# This injects a new line break following the \n
+# Any space after the \n will be placed on the next line
+print('Hello\n how are you?')
+# If you eliminate the space, it will start the next line with text instead of a space character
+print('Hello\nhow are you?')
+
+# Formatted Strings
+# we can create a string to greet someone with their name and age using the + to concatenate strings
+name = 'Johnny'
+age = 55
+print('Hi ' + name + '. You are ' + str(age) + ' years old.')
+
+# Or, we can use the f for formatted strings and place the fields in {}
+print(f'Hi {name}. You are {age} years old.')
+# by adding the f at the beginning it tells python this is a formatted string
+# and I want to add the fields as formatted strings.
+
+# In python 2 the .format feature was used to accomplish this as follows:
+print('Hi {}. You are {} years old.'.format('Johnny', '55'))
+# In this example we get rid of the f at the beginning, add .format to the end of the string
+# remove the names from the brackets and add the values as strings in parenthesis to the end in order
+
+# However, we can also use the field names in order
+print('Hi {}. You are {} years old.'.format(name, age))
+# This still accomplishes the task
+# But
+# We can also use index values for the name fields
+print('Hi {0}. You are {1} years old.'.format(name, age))
+# and if we reverse the indexes, this changes the output by reversing the names
+print('Hi {1}. You are {0} years old.'.format(name, age))
+# However, we can also add the name fields directly in the formatted string
+print('Hi {new_name}. You are {new_age} years old.'.format(new_name='Sally', new_age='100'))
+
+# While all of these methods can be used, the f at the beginning is the cleanest method
+print()
+
+# String slicing
+selfish = '01234567'
+print(selfish)  # Prints the entire string
+# print(selfish[start:finish]) will print the string between the start and finish points
+print(selfish[1:4]) # prints 1 through 3 because the endpoint is exclusive
+print(selfish[1:]) # tells python to print character 1 to the end of the string
+print(selfish[:5]) # prints from 0 to 5 exclusive)
+print()
+
+# The next topic is called stepover
+# print(selfish[start:finish:stepover])
+# if we use a stepover of 1, it prints the whole string
+print(selfish[0:8:1]) # whole string prints
+print(selfish[0:8:2]) # steps over by 2 characters in the string
+print(selfish[0:8:3]) # steps over by 3
+print()
+
+# prints from the end
+print(selfish[-1])
+print(selfish[::-1]) # will print in reverse - quite a popular method
+print(selfish[::-2]) # same reverse printing, but skip by 2
