@@ -130,7 +130,7 @@ print(selfish[1:]) # tells python to print character 1 to the end of the string
 print(selfish[:5]) # prints from 0 to 5 exclusive)
 print()
 
-# The next topic is called stepover
+# The next topic is called stepover or string slicing
 # print(selfish[start:finish:stepover])
 # if we use a stepover of 1, it prints the whole string
 print(selfish[0:8:1]) # whole string prints
