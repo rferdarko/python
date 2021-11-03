@@ -142,3 +142,70 @@ print()
 print(selfish[-1])
 print(selfish[::-1]) # will print in reverse - quite a popular method
 print(selfish[::-2]) # same reverse printing, but skip by 2
+print()
+# String Immutability
+# You cannot change a string through assignment, but you can use reassignment the value
+
+# Length = len
+greet = 'Hello'
+print(len(greet)) # Will print the length of the string
+
+print(greet[0:len(greet)])  # This will print from 0 to the end of the string
+
+# The following if-else statement will print 1 of 2 possible print statements
+if len(greet) < 5:
+    print("Greet is less than 5")
+else:
+    print("Greet is 5 or greater")
+
+# Boolean type print statement to verify if a character exists in a string
+if 'H' in greet:
+    print('True, H is in the string')
+else:
+    print('False, H is not in the string')
+print()
+
+# Print in UPPERCASE
+quote = "hello there."
+print(quote.upper())
+
+# LOWERCASE
+print(quote.lower())
+
+# CAPITALIZE
+print(quote.capitalize())
+
+# FIND - does a ' ' exist in the phrase?
+print(quote.find('there'))
+# In this case 'there' starts at index 6
+
+# REPLACE - will replace a string of text with a new string of text
+print(quote.replace('there', 'man'))
+# in this case replaces 'there' with 'man' and print it to the screen
+
+# Booleans
+print(bool(1))  # Prints TRUE
+print(bool(0))  # Prints FALSE
+
+name = 'Bob'  # assignment
+is_21 = False # condition
+if is_21 is False: # if condition is met
+    print(f'{name} is not 21 yet.') # Print this statement
+else: # otherwise, if condition is not met
+    print(f'{name} is 21 or more') # Print this statement
+print()
+
+# Get today's date and calculate age
+from datetime import date  # imports date library
+current_year = date.today().year # gets current year
+# print(current_year)  # Print current year
+birth_year = input('What year were you born? ') # assigns birth year from user input
+#birth_month = imput('What month were you born? ')
+#birth_day = imput('What day were you born? ')
+current_age = (int(current_year) - int(birth_year))  # calculates current age from integer values
+print(f'Your age is {current_age}')  # prints users current age in formatted printing
+
+
+
+
+
