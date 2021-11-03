@@ -204,8 +204,12 @@ birth_year = input('What year were you born? ') # assigns birth year from user i
 #birth_day = imput('What day were you born? ')
 current_age = (int(current_year) - int(birth_year))  # calculates current age from integer values
 print(f'Your age is {current_age}')  # prints users current age in formatted printing
+print()
 
-
-
+user_name = input('Enter a username ') # gets value from user input
+password = input('Enter a password ') # gets value from user input
+password_length = len(password) # calculates of the users password entered
+password_mask = '*' * password_length # hides password with stars for characters
+print(f'You entered:\n\tUsername: {user_name} \n\tPassword: {password_mask} \n\tThe password length is {password_length} characters.')
 
 
