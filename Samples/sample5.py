@@ -18,12 +18,12 @@ print()
 # keep in mind a dictionary is not sorted, whereas a list is sorted
 mylist = [     # Start of list
     {  # dictionary 0
-        'a': [99,88,77,66,55,44,33,22,11],   # key: value array
+        'a': [99,88,77,66,55,44,33,22,11],   # key: value list
         'b': 'X',                            # key : value
-        'c': [21,22,23,24,25,26]             # key:value array
+        'c': [21,22,23,24,25,26]             # key:value list
 },     # End of dictionary 0
 {      # dictionary 1
-    'a': [15,16,17],     # key:value array
+    'a': [15,16,17],     # key:value list
     'b': 'zoo',            # key:value
     'c': 'what'             #kay:value
 }   # End of dictionary 1
