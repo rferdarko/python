@@ -14,11 +14,14 @@ print(my_set)
 
 my_list = [1,2,3,4,5,5,5,6]  # This is a list with duplicates
 print(my_list) # Prints my_list
+print(len(my_list))  # Prints the length of the list
 print(set(my_list)) # Prints set of my_list - will not print duplicates
 my_set2 = set(my_list) # Creates a SET from the LIST to eliminate duplicates
 print(my_set2)  # Prints the new set
+print(len(my_set2))  # Prints the length of the new set
 my_list2 = list(my_set2)  # Creates a NEW LIST from the SET, there are NO Duplicates in this list
 print(my_list2) # Prints the new list
+print(len(my_list2)) # Prints the Length of the New List
 
 
 
