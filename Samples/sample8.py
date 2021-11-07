@@ -55,12 +55,26 @@ print(another_set22)  # Prints another_set22
 set_1 = {1,2,3,4}
 set_2 = {3,4,5,6}
 print(f'set_1 contains {set_1} and set_2 contains {set_2}')
-print(f'The intersection of the 2 sets contains {set_1.intersection(set_2)}')  # Prints the intersecting objects in the sets
+print(f'The intersection of the 2 sets contains {set_1.intersection(set_2)}')
+# Prints the intersecting objects in the sets
+print(set_1 & set_2)  # Another intersection method
 
 # .isdisjoint()
+print(set_1.isdisjoint(set_2)) # Checks to see if this is 2 circles overlapping, returns False if they are overlapping
+
 # .issubset()
+set_3 = {3,4}
+set_4 = {3,4,5,6}
+print(set_3.issubset(set_4))  # Checks to see if set3 is a subset of set4
+# True as the entirety of set3 is inside of set4
+
 # .issuperset()
+print((set_4.issuperset(set_3)))  # Checks to se if set4 is a superset of set3 - this is true
+
 # .union()
+print(set_1.union(set_2)) # Unites the two sets and removed any duplicates
+
+print(set_1 | set_2)  # another way to create a union in Python
 
 
 
