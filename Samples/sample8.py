@@ -45,10 +45,11 @@ my_set.discard(7) # Discards 7 from the original set
 print(my_set)
 
 # .difference_update()
-my_set.add(7)  # Adds 7 to my_set
-print(my_set)  # prints my_set
-this_set.difference_update(my_set)  # updates this_set with the difference from my_set
-print(this_set)  # prints this_set - shows both sets are now identical
+another_set21 = {1,2,3,4,5}
+another_set22 = {4,5,6,7}
+print(another_set21.difference_update(another_set22)) # updates this_set with the similarities removed
+print(another_set21) # Shows 4,5 contained in set another_set22 were removed from another_set21
+print(another_set22)  # Prints another_set22
 
 # .intersection()
 set_1 = {1,2,3,4}
