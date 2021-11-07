@@ -13,4 +13,15 @@ user = {
     }
 print(user[(1,2)]) # calls the key (1,2) which is a tuple for a key in the dictionary
 
+# Tuple has 2 methods, 'count()' and 'index()'
+print((1,2).count(2))  # Returns the number of 2's in the tuple (1,2)
+
+das_tuple = ('a','b','c','d','e','f','f','f','g')  # tuple
+print(das_tuple)  # Prints the tuple
+print(das_tuple.index('e')) # Prints the index number in the tuple for 'e'
+print(das_tuple.count('f')) # Prints the number of 'f''s in the tuple
+
+
+
+
 
