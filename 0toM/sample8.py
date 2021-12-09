@@ -77,5 +77,3 @@ print(set_1.union(set_2)) # Unites the two sets and removed any duplicates
 print(set_1 | set_2)  # another way to create a union in Python
 
 
-
-
